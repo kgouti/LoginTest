@@ -7,12 +7,12 @@ b) Download and install Pycharm or any IDE supported for python
 
 c) Clone the repo
 
-d) Install all the dependencies mentioned in requirements.txt using pip command
+d) Install all the dependencies mentioned in Requirements.txt using pip command
 
-e) Ensure Chrome is installed locally
+e) Ensure Chrome browser is installed locally
 
 #### **Assumptions**
-a) While there is scope to expand the testing to various browser, currently only Chrome browser is supported
+a) While there is scope to expand testing in various browsers, currently only Chrome browser is supported
 
 b) Application does not throw errors for invalid credentials. The respective automation step can be enabled once the invalid credentials functionality is implemented
 
