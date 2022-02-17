@@ -1,6 +1,5 @@
 from behave import given, when, then
 from pages.LoginPage import Login
-import time
 
 
 @given("login url is opened")
@@ -8,7 +7,6 @@ def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    print("inside login step definition")
     context.login_page = Login(context.driver)
     context.login_page.open_url()
 
@@ -37,7 +35,7 @@ def step_impl(context):
     """
     :type context: behave.runner.Context
     """
-    print("Page title {}".format(context.login_page.get_page_title()))
+    # print("Page title {}".format(context.login_page.get_page_title()))
     assert context.login_page.get_logged_in_text().strip() == "Successfully logged in!"
 
 
@@ -49,7 +47,6 @@ def step_impl(context, user, password):
     :type context: behave.runner.Context
     """
     enter_user_credentials(context, user=user, password=password)
-    time.sleep(5)
     pass
 
 

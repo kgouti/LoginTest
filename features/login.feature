@@ -3,7 +3,6 @@ Feature: Login
   # Enter feature description here
 
   Scenario: Login with valid credentials
-    # Enter steps here
   Given login url is opened
     When user enters valid username test@qa-experience.com and password Password1
     And clicks login button

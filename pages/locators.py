@@ -9,4 +9,4 @@ class Loginlocators:
 
 
 class QAinterviewlocators:
-    logged_in_text = "logged-in__success"
+    logged_in_text = (By.XPATH, "//div[@class='logged-in__success']")
